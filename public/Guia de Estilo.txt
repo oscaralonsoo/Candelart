@@ -1,0 +1,3 @@
+Primary Color: #F2D5C4
+Complementary Color: #FEFAF6
+Secondary Color: #E7BDA1

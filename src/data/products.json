@@ -1,0 +1,133 @@
+{
+    "products": [
+      {
+        "name": "Alpaca",
+        "price": 4.90,
+        "path": "../../public/product_images/alpaca.jpg",
+        "type": "decorative",
+        "colors": ["white", "brown"],
+        "new": false
+      },
+      {
+        "name": "Peony",
+        "price": 5.90,
+        "path": "../../public/product_images/peony.jpg",
+        "type": "decorative",
+        "colors": [""],
+        "new": false
+      },
+      {
+        "name": "Canela",
+        "price": 7.90,
+        "path": "../../public/product_images/canela.png",
+        "type": "aromatic",
+        "colors": [""],
+        "new": false
+      },
+      {
+        "name": "Hearts Cube",
+        "price": 6.90,
+        "path": "../../public/product_images/heart_cube.png",
+        "type": "decorative",
+        "colors": [""],
+        "new": false
+      },
+      {
+        "name": "Cactus",
+        "price": 4.90,
+        "path": "../../public/product_images/cactus.jpg",
+        "type": "decorative",
+        "colors": [""],
+        "new": false
+      },
+      {
+        "name": "Flor de cerezo",
+        "price": 7.90,
+        "path": "../../public/product_images/cerezo.png",
+        "type": "aromatic",
+        "colors": [""],
+        "new": false
+      },
+      {
+        "name": "Petite Peony",
+        "price": 3.90,
+        "path": "../../public/product_images/petite_peony.jpg",
+        "type": "decorative",
+        "colors": [""],
+        "new": false
+      },
+      {
+        "name": "Puppy Paw",
+        "price": 5.90,
+        "path": "../../public/product_images/puppy_paw.jpg",
+        "type": "decorative",
+        "colors": [""],
+        "new": false
+      },
+      {
+        "name": "Cloud Dream",
+        "price": 7.90,
+        "path": "../../public/product_images/cloud_dream.jpg",
+        "type": "decorative",
+        "colors": [""],
+        "new": false
+      },
+      {
+        "name": "Cup Of Love",
+        "price": 7.90,
+        "path": "../../public/product_images/cup_of_love.jpg",
+        "type": "decorative",
+        "colors": [""],
+        "new": false
+      },
+      {
+        "name": "Snowman",
+        "price": 6.90,
+        "path": "../../public/product_images/snowman.jpg",
+        "type": "special",
+        "colors": [""],
+        "new": true
+      },
+      {
+        "name": "Heart",
+        "price": 7.90,
+        "path": "../../public/product_images/heart.jpg",
+        "type": "decorative",
+        "colors": [""],
+        "new": true
+      },
+      {
+        "name": "Bear Heart",
+        "price": 4.90,
+        "path": "../../public/product_images/bear_heart.jpg",
+        "type": "decorative",
+        "colors": [""],
+        "new": true
+      },
+      {
+        "name": "Concha",
+        "price": 3.90,
+        "path": "../../public/product_images/concha.jpg",
+        "type": "decorative",
+        "colors": [""],
+        "new": true
+      },
+      {
+        "name": "Gnomo Copo de Nieve",
+        "price": 5.90,
+        "path": "../../public/product_images/gnomo_copo.jpg",
+        "type": "special",
+        "colors": [""],
+        "new": true
+      },
+      {
+        "name": "Papa Noel",
+        "price": 4.90,
+        "path": "../../public/product_images/papa_noel.jpg",
+        "type": "special",
+        "colors": [""],
+        "new": true
+      }
+    ]
+  }
+  
