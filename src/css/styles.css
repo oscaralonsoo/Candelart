@@ -534,3 +534,174 @@ main {
 .sort-by__hidden span:hover {
     background-color: #f4f4f4;
 }
+
+/* Añadir estilos responsivos */
+@media (max-width: 1200px) {
+    header {
+        padding: 0 10%;
+    }
+
+    .best-sellers {
+        padding: 0 10%;
+    }
+
+    .products {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 0 5%;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .banner {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .banner img,
+    .banner__content {
+        width: 90%;
+    }
+
+    .best-sellers__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .welcome {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .welcome__content,
+    .welcome__margin-image {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .announcement-bar {
+        font-size: 11px;
+        height: auto;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .best-sellers__title h3 {
+        font-size: 18px;
+    }
+
+    .best-sellers__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products__content {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .footer__contact-us {
+        padding: 0 5%;
+    }
+
+    .contact-us__content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    .banner span {
+        font-size: 30px;
+    }
+
+    .best-sellers {
+        gap: 30px;
+    }
+
+    .products__content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .welcome img {
+        width: 100%;
+    }
+
+    .welcome__title {
+        font-size: 28px;
+    }
+
+    .welcome__paragraph {
+        font-size: 14px;
+    }
+
+    .footer__contact-us {
+        padding: 0 10px;
+    }
+}
+
+/* Usar márgenes basados en el ancho de la ventana */
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100vw; /* Para asegurarse de que no desborde el viewport */
+    font-family: Poppins, sans-serif;
+}
+
+/* Elementos principales con márgenes adaptativos */
+.container {
+    margin: 0 5vw; /* Márgenes del 5% del ancho del viewport */
+    width: calc(100% - 10vw); /* Ancho ajustado dinámicamente */
+}
+
+header {
+    padding: 0 5vw;
+}
+
+.best-sellers, .products, .footer__contact-us {
+    padding: 0 5vw;
+}
+
+/* En dispositivos más pequeños */
+@media (max-width: 768px) {
+    .container {
+        margin: 0 3vw; /* Reducir márgenes en pantallas pequeñas */
+        width: calc(100% - 6vw);
+    }
+
+    header, .best-sellers, .products, .footer__contact-us {
+        padding: 0 3vw;
+    }
+}
+
+/* Asegurar que las imágenes y el contenido no desborden */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Textos fluidos */
+h1, h2, h3, p, span, a {
+    font-size: calc(1rem + 0.5vw); /* Tamaño relativo al viewport */
+}
