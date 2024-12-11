@@ -134,6 +134,10 @@ nav li:hover {
     z-index: 1;
 }
 
+button:visited {
+    color: black;
+}
+
 .primary-button:hover {
     background-color: #d4b9aa;
     cursor: pointer;
@@ -538,145 +542,24 @@ main {
 /* Tablets (ejemplo: max-width: 992px) */
 @media (max-width: 992px) {
     header {
-        padding: 0 5%;
-    }
-    .banner {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-    .banner img, .banner__content {
-        width: 100%;
-    }
-    .best-sellers {
-        padding: 0 5%;
-        height: auto;
-    }
-    .best-sellers__content {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
-    .welcome {
-        flex-direction: column;
-        height: auto;
-        padding: 30px;
-        gap: 30px;
-    }
-    .welcome__content, .welcome__margin-image {
-        width: 100%;
-    }
-    .products {
-        padding: 0 5%;
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Móviles (ejemplo: max-width: 576px) */
-@media (max-width: 576px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .announcement-bar__message {
-        font-size: 11px;
-    }
-
-    .banner {
-        padding: 20px;
-    }
-
-    .banner__content span {
-        font-size: 32px;
-        letter-spacing: 2px;
-    }
-
-    .primary-button, .secondary-button {
-        width: 100px;
-        height: 35px;
-        font-size: 11px;
-    }
-
-    .best-sellers {
-        gap: 30px;
-        padding: 0 10px;
-    }
-
-    .best-sellers__content {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .best-sellers__item {
-        max-width: 100%;
-    }
-
-    .welcome {
-        padding: 20px;
-    }
-
-    .welcome__title {
-        font-size: 24px;
-    }
-
-    .welcome__paragraph {
-        font-size: 16px;
-    }
-
-    .welcome__content, .welcome__margin-image {
-        width: 100%;
-        padding: 0;
-    }
-
-    /* Ajustes para footer y formulario de contacto */
-    .footer__contact-us {
-        padding: 0 10%;
-        height: auto;
-    }
-
-    .contact-us__form input, .contact-us__form textarea {
-        width: 100%;
-    }
-
-    /* Ajustes para sección de productos */
-    .products {
-        padding: 0 10px;
-    }
-
-    .products__content {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .product__image {
-        width: 100%;
-        height: auto;
-    }
-}
-@media (max-width: 768px) {
-    body {
-      padding: 0 10px;
-    }
-  
-    .announcement-bar {
-      font-size: 11px;
-      padding: 5px 10px;
-    }
-  
-    header {
       flex-direction: column;
       align-items: center;
-      gap: 10px;
-      padding: 10px 0;
+      height: auto;
+      padding: 20px;
+      gap: 20px;
+      width: 100%;
+    }
+
+    section {
+        padding-bottom: 20px !important; 
+    }
+
+    .banner::before {
+        background: none;
+    }
+
+    button {
+        align-self: center;
     }
   
     .header__logo {
@@ -686,55 +569,74 @@ main {
     nav ul {
       flex-direction: column;
       gap: 20px;
+      padding: 0;
     }
   
     nav a {
       font-size: 12px;
     }
   
+    .announcement-bar {
+      font-size: 11px;
+      padding: 5px;
+    }
+  
     .banner {
       flex-direction: column;
       height: auto;
-      gap: 10px;
-      padding: 10px;
+      padding: 20px;
     }
   
-    .banner img {
+    .banner img, .banner__content {
       width: 100%;
     }
   
-    .banner__content {
-      width: 100%;
-      text-align: center;
+    .banner__content span {
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+  
+    .primary-button, .secondary-button {
+      width: 100px;
+      height: 35px;
+      font-size: 11px;
     }
   
     .best-sellers {
+      padding: 0 5%;
       gap: 30px;
-      padding: 0 10px;
+      height: auto;
     }
   
     .best-sellers__content {
+      flex-wrap: wrap;
       flex-direction: column;
-      gap: 20px;
+      align-items: center;
+      gap: 30px;
     }
   
     .best-sellers__item {
-      align-items: center;
       max-width: 100%;
     }
   
     .welcome {
       flex-direction: column;
-      gap: 20px;
-      padding: 10px;
+      height: auto;
+      padding: 30px;
+      gap: 30px;
+    }
+  
+    .welcome__title {
+      font-size: 24px;
+    }
+  
+    .welcome__paragraph {
+      font-size: 16px;
     }
   
     .welcome__content, .welcome__margin-image {
       width: 100%;
-    }
-  
-    footer {
-      padding: 10px 5%;
+      padding: 0;
     }
   
     .list-payment {
@@ -744,45 +646,47 @@ main {
     }
   
     .products {
+      padding: 0 5%;
       grid-template-columns: 1fr;
-      padding: 10px;
     }
   
     .products__content {
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
     }
   
-    .filter__sort-by {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
+    .product__image {
+      width: 100%;
+    }
+
+    .footer {
+        max-width: 100%;
+    }
+
+    .footer__contact-us {
+        padding: 0 10%;
+    }
+
+    .footer__contact-us input{
+        max-width: 100%;
     }
   }
   
-  /* Media Query for Tablets */
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (max-width: 576px) {
     header {
-      padding: 10px 5%;
-    }
-  
-    .banner {
-      height: auto;
-    }
-  
-    .best-sellers__content {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-  
-    .products__content {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-  
-    .welcome {
       padding: 20px;
     }
   
-    footer {
-      padding: 20px 10%;
+    .banner {
+      padding: 20px;
+    }
+  
+    .best-sellers {
+      padding: 0 10px;
+    }
+  
+    .products {
+      padding: 0 10px;
     }
   }
   
