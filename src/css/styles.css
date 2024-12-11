@@ -135,7 +135,7 @@ nav li:hover {
 }
 
 button:visited {
-    color: black;
+    color: #1e1e1e;
 }
 
 .primary-button:hover {
@@ -547,7 +547,11 @@ main {
       height: auto;
       padding: 20px;
       gap: 20px;
-      width: 100%;
+      max-width: 100%;
+    }
+
+    header ul {
+        text-align: center;
     }
 
     section {
@@ -556,6 +560,11 @@ main {
 
     .banner::before {
         background: none;
+    }
+
+    .banner__content span{
+        margin: 15px 5px;
+        text-align: center;
     }
 
     button {
@@ -600,6 +609,7 @@ main {
       width: 100px;
       height: 35px;
       font-size: 11px;
+      color: #1e1e1e;
     }
   
     .best-sellers {
@@ -670,6 +680,11 @@ main {
     .footer__contact-us input{
         max-width: 100%;
     }
+
+    .footer__policies {
+        flex-direction: column;
+    }
+    
   }
   
   @media (max-width: 576px) {
