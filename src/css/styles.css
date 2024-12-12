@@ -431,7 +431,7 @@ main {
 }
 
 .product-header {
-    height: 200px;
+    height: 50px;
 }
 
 .products {
@@ -597,7 +597,7 @@ main {
     }
   
     .banner img, .banner__content {
-      width: 100%;
+      width: 70%;
     }
   
     .banner__content span {
@@ -661,16 +661,17 @@ main {
     }
   
     .products__content {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      justify-items: center;
       gap: 20px;
-    }
-  
-    .product__image {
-      width: 100%;
     }
 
     .footer {
         max-width: 100%;
+    }
+
+    .footer__bottom {
+        padding-top: 130px;
     }
 
     .footer__contact-us {
@@ -703,5 +704,9 @@ main {
     .products {
       padding: 0 10px;
     }
+
+    .banner img, .banner__content {
+        width: 100%;
+      }
   }
   
